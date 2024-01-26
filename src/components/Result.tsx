@@ -1,5 +1,5 @@
-import { ActionIcon, Button, Code, CopyButton, Group, Paper, Stack, Text, Tooltip, rem } from "@mantine/core";
-import { IconCheck, IconCopy, IconReceipt, IconReload } from "@tabler/icons-react";
+import { ActionIcon, CopyButton, Group, Paper, Stack, Text, Tooltip, rem } from "@mantine/core";
+import { IconCheck, IconCopy, IconReload } from "@tabler/icons-react";
 
 export const Result = ({ password, newPassword }: { password: string, newPassword: () => void }) => {
     return (
