@@ -14,8 +14,12 @@ const App = () => {
   const [length, setLength] = useState<number>(10);
   const [result, setResult] = useState<string>("");
 
-  useEffect(() => {
+  const newPassword = () => {
     setResult(simplePasswordGen(useUpper, useLower, useNumbers, useSpecial, length));
+  }
+
+  useEffect(() => {
+    newPassword();
   }, [useUpper, useLower, useNumbers, useSpecial, length]);
 
   return (
@@ -34,7 +38,7 @@ const App = () => {
             setLower={setUseLower}
             setNumbers={setUseNumbers}
             setSpecial={setUseSpecial} />
-          <Result password={result} />
+          <Result password={result} newPassword={newPassword} />
         </Stack>
       </Container>
     </MantineProvider>

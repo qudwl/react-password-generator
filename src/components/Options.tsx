@@ -19,16 +19,16 @@ export const Options = ({ lower, setLower, upper, setUpper, numbers, setNumbers,
             <Stack gap="lg" m="lg">
                 <Group justify="space-between">
                     <Tooltip label="Use capital letters." refProp="rootRef">
-                        <Checkbox checked={upper} onChange={(e) => setUpper(e.currentTarget.checked)} label="ABC" title="Use capital letters." />
+                        <Checkbox radius="lg" checked={upper} onChange={(e) => setUpper(e.currentTarget.checked)} label="ABC" title="Use capital letters." />
                     </Tooltip>
                     <Tooltip label="Use lowercase letters." refProp="rootRef">
-                        <Checkbox checked={lower} onChange={(e) => setLower(e.currentTarget.checked)} label="abc" title="Use lowercase letters." />
+                        <Checkbox radius="lg" checked={lower} onChange={(e) => setLower(e.currentTarget.checked)} label="abc" title="Use lowercase letters." />
                     </Tooltip>
                     <Tooltip label="Use numbers." refProp="rootRef">
-                        <Checkbox checked={numbers} onChange={(e) => setNumbers(e.currentTarget.checked)} label="123" title="Use numbers." />
+                        <Checkbox radius="lg" checked={numbers} onChange={(e) => setNumbers(e.currentTarget.checked)} label="123" title="Use numbers." />
                     </Tooltip>
                     <Tooltip label="Use special characters." refProp="rootRef">
-                        <Checkbox checked={special} onChange={(e) => setSpecial(e.currentTarget.checked)} label="!@#$" title="Use special characters." />
+                        <Checkbox radius="lg" checked={special} onChange={(e) => setSpecial(e.currentTarget.checked)} label="!@#$" title="Use special characters." />
                     </Tooltip>
                 </Group>
                 <Stack>
